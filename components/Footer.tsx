@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-// --------------------------
+// ----------------------------
 
 type Props = {};
 
@@ -52,7 +52,7 @@ const Footer = (props: Props) => {
           </li>
           <li>
             <Link href="#OurPrograms" className="mr-4 hover:underline md:mr-6 ">
-              Campaigns
+              Our Programs
             </Link>
           </li>
           <li>
@@ -62,17 +62,12 @@ const Footer = (props: Props) => {
           </li>
           <li>
             <Link href="#" className="mr-4 hover:underline md:mr-6">
-              Affiliate Program
+              Testimonials
             </Link>
           </li>
           <li>
             <Link href="#" className="mr-4 hover:underline md:mr-6">
               FAQs
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="mr-4 hover:underline md:mr-6">
-              Contact
             </Link>
           </li>
         </ul>

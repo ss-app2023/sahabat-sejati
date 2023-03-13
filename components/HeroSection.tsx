@@ -16,16 +16,17 @@ const HeroSection = (props: Props) => {
           className="inline-flex justify-between items-center shadow-slate-300 shadow-md py-1 px-1 pr-4 mb-10 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
           role="alert"
         >
-          <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">Join us now!</span> <span className="text-sm font-medium">Right time is now! Do not wasted time, your future is here with us!</span>
+          <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">Join now!</span>
+          <span className="text-sm font-medium">Your future is here with us!</span>
           <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
           </svg>
         </Link>
 
-        <Image className="md:h-96 sm:h-72 rounded-full shadow-xl mx-auto" src="/herosection_photo.png" alt="Photo HeroSection" />
+        <Image className="md:h-96 sm:h-72 rounded-full shadow-xl mx-auto" width="300" height="300" src="/herosection_photo.png" alt="Photo HeroSection" />
 
         {/* Title HeroSection */}
-        <div className="bg-white md:-my-24 sm:-my-20 md:mb-10 sm:mb-10">
+        <div className="bg-white md:-my-24 sm:-my-20 xs:-my-20 md:mb-10 sm:mb-10">
           <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Education Consultant</h1>
           <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
             Kami Mitra MSA adalah lembaga konsultan pendidikan luar negeri resmi yang siap mendukung kesuksesan masa depan anda mengikuti pendidikan maupun mengembangkan karir di luar negeri.
@@ -33,7 +34,7 @@ const HeroSection = (props: Props) => {
         </div>
 
         {/* Button */}
-        <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <div className="flex flex-col mb-8 lg:mb-16 xs:mt-24 gap-4 space-y-4 sm:flex-row xs:flex-row sm:justify-center xs:justify-center sm:space-y-0 xs:space-y-0 sm:space-x-4 xs:space-x-4">
           <Link
             href="#OurPrograms"
             className="inline-flex justify-center items-center shadow-slate-300 shadow-md py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"

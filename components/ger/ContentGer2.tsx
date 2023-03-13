@@ -10,7 +10,7 @@ const ContentGer2 = (props: Props) => {
       <div className="dark:bg-gray-900">
         <div className="px-10 py-8 mx-auto max-w-screen-xl lg:py-10 lg:px-6">
           <div className="max-w-screen-xl text-gray-500 sm:text-lg dark:text-gray-400">
-            <h3 className="md:mb-8 sm:mb-4 md:text-6xl sm:text-4xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
+            <h3 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-4xl xs:text-3xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
               Persyaratan Mendaftar <span className="font-extrabold text-primary-600">Ausbildung</span> di <span className="font-extrabold text-primary-700"> Jerman</span>?
             </h3>
             <ul className="max-w-screen-xl space-y-1 mb-4 text-gray-500 list-disc list-inside dark:text-gray-400">
@@ -24,7 +24,7 @@ const ContentGer2 = (props: Props) => {
       </div>
 
       <div className="px-10 py-8 mx-auto max-w-screen-xl lg:py-10 lg:px-6">
-        <h3 className="md:mb-8 sm:mb-4 md:text-6xl sm:text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
+        <h3 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-4xl xs:text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
           Batasan <span className="text-teal-600 dark:text-primary-500">Usia</span>
         </h3>
         <p className="text-lg font-normal mb-6 text-gray-500 lg:text-xl dark:text-gray-400">Batasan usia berlaku untuk orang Indonesia. Hal ini berkaitan dengan pendidikan dan pengalaman yang dimiliki.</p>
@@ -48,7 +48,7 @@ const ContentGer2 = (props: Props) => {
       </div>
 
       <div id="ContentGer2" className="max-w-screen-xl mx-auto px-10 py-8 lg:py-10 lg:px-6">
-        <h2 className="md:mb-8 sm:mb-6 md:text-6xl sm:text-4xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
+        <h2 className="md:mb-8 sm:mb-6 xs:mb-6 md:text-6xl sm:text-4xl xs:text-4xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
           Cara dan Tahapan <span className="font-extrabold text-primary-600">Mendaftar</span>
         </h2>
         <ol className="relative border-l dark:border-gray-700">

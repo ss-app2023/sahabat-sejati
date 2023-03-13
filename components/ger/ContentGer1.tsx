@@ -1,7 +1,7 @@
 // Import for system
 import React from "react";
 import Image from "next/image";
-// ----------------------------
+// -----------------------------
 
 type Props = {};
 
@@ -15,7 +15,7 @@ const ContentGer1 = (props: Props) => {
           <Image className="mt-4 w-full lg:mt-10 rounded-lg shadow-slate-800 shadow-md" src="/office_long_2.jpg" alt="office content 2" />
         </div>
         <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 className="md:mb-8 sm:mb-4 md:text-6xl sm:text-4xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
+          <h2 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-4xl xs:text-4xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
             Apa itu program <span className="font-extrabold text-primary-600">Ausbildung</span>?
           </h2>
           <p className="mb-4">
@@ -29,15 +29,15 @@ const ContentGer1 = (props: Props) => {
       {/* Second Section */}
       <div className="px-10 py-8 mx-auto max-w-screen-xl lg:py-10 lg:px-6">
         {/* Caption */}
-        <h3 className="md:mb-8 sm:mb-3 md:text-6xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-          Ausbildung <span className="text-transparent bg-clip-text bg-gradient-to-r font-bold to-emerald-600 from-sky-500"> Jerman</span>
-        </h3>
-        <p className="text-lg font-normal md:mb-8 sm:mb-4 text-gray-500 lg:text-xl dark:text-gray-400">
+        <h2 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-4xl xs:text-4xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
+          Ausbildung <span className="font-extrabold text-primary-600">Jerman</span>
+        </h2>
+        <p className="text-lg font-normal md:mb-8 sm:mb-4 xs:mb-4 text-gray-500 lg:text-xl dark:text-gray-400">
           Selama menjalani program di Jerman, kamu akan berpindah-pindah departemen pekerjaan mulai dari pekerjaan yang paling mudah sampai pekerjaan yang tanggung jawabnya besar. Selain itu, kamu akan mendapatkan gaji yang dapat digunakan
           sebagai biaya hidup selama kamu tinggal di Jerman.
         </p>
 
-        <video className="w-full rounded-xl mb-6 shadow-slate-600 shadow-md" controls>
+        <video className="w-full rounded-xl mb-6 xs:mb-2 shadow-slate-600 shadow-md" controls>
           <source src="http://jerman.mitragroup.id/wp-content/uploads/2022/08/Hotel-Occur-Wm-1.m4v" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -52,10 +52,9 @@ const ContentGer1 = (props: Props) => {
         </video>
 
         {/* Caption */}
-        <h3 className="md:mb-8 sm:mb-3 md:text-6xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-          Proses Ausbildung
-          <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"> Jerman</span>
-        </h3>
+        <h2 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-4xl xs:text-3xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
+          Proses <span className="font-extrabold text-primary-600">Ausbildung</span> di <span className="font-extrabold text-primary-700"> Jerman</span>
+        </h2>
         <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
           Proses Ausbildung Jerman, meliputi pendaftaran, pembelajaran bahasa, kontrak kerja, pemberangkatan ke Jerman. Kami siap membantu siswa untuk proses tersebut sampai tuntas untuk mengikuti Ausbildung di Jerman
         </p>
