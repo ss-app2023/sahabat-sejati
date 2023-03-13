@@ -23,7 +23,7 @@ const HeroSection = (props: Props) => {
           </svg>
         </Link>
 
-        <Image className="md:h-96 sm:h-72 rounded-full shadow-xl mx-auto" width="300" height="300" src="/herosection_photo.png" alt="Photo HeroSection" />
+        <Image className="md:h-96 sm:h-72 rounded-full shadow-xl mx-auto" src="/herosection_photo.png" alt="Photo HeroSection" />
 
         {/* Title HeroSection */}
         <div className="bg-white md:-my-24 sm:-my-20 xs:-my-20 md:mb-10 sm:mb-10">
