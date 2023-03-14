@@ -2,7 +2,10 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-// --------------------------
+// ----------------------------
+import heroSectionPhoto from "../public/herosection_photo.png";
+import bannerJepang1 from "../public/banner_jepang_1.jpg";
+import bannerJerman1 from "../public/banner_jerman_1.jpg";
 
 type Props = {};
 
@@ -23,18 +26,18 @@ const HeroSection = (props: Props) => {
           </svg>
         </Link>
 
-        <Image className="md:h-96 sm:h-72 rounded-full shadow-xl mx-auto" src="/herosection_photo.png" alt="Photo HeroSection" />
+        <Image className="lg:h-96 md:h-96 sm:h-80 xs:h-72 lg:w-96 md:w-96 sm:w-80 xs:w-72 rounded-full shadow-xl mx-auto" src={heroSectionPhoto} alt="Photo HeroSection" />
 
         {/* Title HeroSection */}
         <div className="bg-white md:-my-24 sm:-my-20 xs:-my-20 md:mb-10 sm:mb-10">
           <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Education Consultant</h1>
-          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+          <p className="mb-4 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
             Kami Mitra MSA adalah lembaga konsultan pendidikan luar negeri resmi yang siap mendukung kesuksesan masa depan anda mengikuti pendidikan maupun mengembangkan karir di luar negeri.
           </p>
         </div>
 
         {/* Button */}
-        <div className="flex flex-col mb-8 lg:mb-16 xs:mt-24 gap-4 space-y-4 sm:flex-row xs:flex-row sm:justify-center xs:justify-center sm:space-y-0 xs:space-y-0 sm:space-x-4 xs:space-x-4">
+        <div className="flex flex-col mb-8 lg:mb-16 lg:mt-8 md:mt-8 xs:mt-24 gap-4 space-y-4 sm:flex-row xs:flex-row sm:justify-center xs:justify-center sm:space-y-0 xs:space-y-0 sm:space-x-4 xs:space-x-4">
           <Link
             href="#OurPrograms"
             className="inline-flex justify-center items-center shadow-slate-300 shadow-md py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
@@ -62,7 +65,7 @@ const HeroSection = (props: Props) => {
         <div className="flex flex-wrap mx-auto mt-8 text-gray-500 sm:justify-between">
           {/* Japan Banner image */}
           <div className="mx-auto lg:mb-0 p-4 hover:text-gray-800 dark:hover:text-gray-400">
-            <Image className="h-80 rounded-2xl shadow-slate-400 shadow-md" src="/banner_jepang_1.jpg" alt="Banner Jepang" />
+            <Image className="h-80 w-80 rounded-2xl shadow-slate-400 shadow-md" src={bannerJepang1} alt="Banner Jepang" />
             <Link
               href="/HomeJpn"
               className="inline-flex justify-center items-center shadow-slate-300 shadow-md py-3 px-5 mt-4 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 "
@@ -73,7 +76,7 @@ const HeroSection = (props: Props) => {
 
           {/* Jerman Banner image */}
           <div className="mx-auto lg:mb-0 p-4 hover:text-gray-800 dark:hover:text-gray-400">
-            <Image className="h-80 rounded-2xl shadow-slate-400 shadow-md" src="/banner_jerman_1.jpg" alt="Banner Jerman" />
+            <Image className="h-80 w-80 rounded-2xl shadow-slate-400 shadow-md" src={bannerJerman1} alt="Banner Jerman" />
             <Link
               href="/gerpages/HomeGer"
               className="inline-flex justify-center items-center shadow-slate-300 shadow-md py-3 px-5 mt-4 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"

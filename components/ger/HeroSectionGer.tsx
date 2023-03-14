@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // ----------------------------
+import smallScreenHeader from "../../public/program_ausbildung.png";
+import largeScreenHeader from "../../public/program_ausbildung.png";
 
 type Props = {};
 
@@ -12,7 +14,7 @@ const HeroSectionGer = (props: Props) => {
       <div className="grid max-w-screen-xl px-10 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12">
         {/* Image for small screen */}
         <div className="sm:h-96 sm:mb-6 sm:mt-0 sm:col-span-5 sm:flex sm:justify-center lg:hidden">
-          <Image src="/program_ausbildung.png" alt="Program Ausbildung" />
+          <Image className="xs:h-80 xs:w-96" src={smallScreenHeader} alt="Program Ausbildung" />
         </div>
 
         {/* Description*/}
@@ -47,7 +49,7 @@ const HeroSectionGer = (props: Props) => {
 
         {/* Image for large screen */}
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex lg:justify-center">
-          <Image className="md:h-96" src="/program_ausbildung.png" alt="Program Ausbildung" />
+          <Image className="h-96 w-96" src={largeScreenHeader} alt="Program Ausbildung" />
         </div>
       </div>
     </section>

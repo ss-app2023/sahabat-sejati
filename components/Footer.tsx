@@ -11,7 +11,7 @@ const Footer = (props: Props) => {
     <footer className="p-4 md:p-8 lg:p-10 dark:bg-gray-800">
       <div className="mx-auto max-w-screen-xl text-center">
         <Link href="#" className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
-          <Image className="h-10 mx-3" src="/logo_mitra_1.png" alt="MITRA MSA" />
+          <Image className="h-10 mx-3" width={50} height={50} src="/logo_mitra_1.png" alt="MITRA MSA" />
           Sahabat Sejati
         </Link>
         <p className="my-3 text-gray-500 dark:text-gray-400">Kami Sahabat Sejati adalah lembaga konsultan pendidikan luar negeri resmi yang berlokasi di Surabaya, JawaTimur.</p>
