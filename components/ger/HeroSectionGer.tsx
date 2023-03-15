@@ -19,7 +19,7 @@ const HeroSectionGer = (props: Props) => {
 
         {/* Description*/}
         <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-5xl xs:text-5xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
+          <h1 className="xs:mb-4 sm:mb-4 md:mb-8  xs:text-5xl sm:text-5xl md:text-6xl  tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
             Program <span className="font-extrabold text-primary-600">Ausbildung</span>
           </h1>
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
@@ -49,7 +49,7 @@ const HeroSectionGer = (props: Props) => {
 
         {/* Image for large screen */}
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex lg:justify-center">
-          <Image className="h-96 w-96" src={largeScreenHeader} alt="Program Ausbildung" />
+          <Image className="md:h-72 lg:h-96 xl:h-112 md:w-72 lg:w-96 xl:w-112" src={largeScreenHeader} alt="Program Ausbildung" />
         </div>
       </div>
     </section>

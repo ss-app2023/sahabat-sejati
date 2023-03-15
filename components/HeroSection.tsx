@@ -67,7 +67,7 @@ const HeroSection = (props: Props) => {
           <div className="mx-auto lg:mb-0 p-4 hover:text-gray-800 dark:hover:text-gray-400">
             <Image className="h-80 w-80 rounded-2xl shadow-slate-400 shadow-md" src={bannerJepang1} alt="Banner Jepang" />
             <Link
-              href="/HomeJpn"
+              href="/jpnpages/HomeJpn"
               className="inline-flex justify-center items-center shadow-slate-300 shadow-md py-3 px-5 mt-4 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 "
             >
               Learn more
