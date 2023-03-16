@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 // --------------------------------------
 // Import for pages
 import HeroSection from "@/components/HeroSection";
+
 import Footer from "@/components/Footer";
 // --------------------------------------
 

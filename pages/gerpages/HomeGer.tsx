@@ -10,6 +10,7 @@ import ContentGer1 from "@/components/ger/ContentGer1";
 import ContentGer2 from "@/components/ger/ContentGer2";
 import FormRegGer from "@/components/ger/FormRegGer";
 import HeaderLogo from "@/components/HeaderLogo";
+import BtnBckHome from "@/components/BtnBckHome";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function Home() {
         <ContentGer1 />
         <ContentGer2 />
         <FormRegGer />
+        <BtnBckHome />
         <Footer />
       </main>
     </>

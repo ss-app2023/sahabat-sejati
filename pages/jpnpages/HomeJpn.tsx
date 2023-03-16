@@ -10,6 +10,7 @@ import ContentJpn1 from "@/components/jpn/ContentJpn1";
 import ContentJpn2 from "@/components/jpn/ContentJpn2";
 import FormRegJpn from "@/components/jpn/FormRegJpn";
 import Footer from "@/components/Footer";
+import BtnBckHome from "@/components/BtnBckHome";
 
 type Props = {};
 
@@ -28,6 +29,7 @@ const HomeJpn = (props: Props) => {
         <ContentJpn1 />
         <ContentJpn2 />
         <FormRegJpn />
+        <BtnBckHome />
         <Footer />
       </main>
     </>
