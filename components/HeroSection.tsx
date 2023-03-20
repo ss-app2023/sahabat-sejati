@@ -4,14 +4,54 @@ import Link from "next/link";
 import Image from "next/image";
 // ----------------------------
 import heroSectionPhoto from "../public/herosection_photo.png";
+import heroSectionPhoto1 from "../public/heroSectionPhoto1.png";
 import bannerJepang1 from "../public/banner_jepang_1.jpg";
 import bannerJerman1 from "../public/banner_jerman_1.jpg";
+import HeaderLogo from "./HeaderLogo";
 
 type Props = {};
 
 const HeroSection = (props: Props) => {
   return (
     <section className="dark:bg-gray-900">
+      <HeaderLogo />
+      <div className="px-4 py-16 xs:py-4 md:py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+      <div className="relative mb-6 sm:mx-auto md:mb-10 md:max-w-md lg:max-w-lg">
+        <Image
+          className="object-cover w-full h-56 rounded-2xl xs:shadow-xl md:shadow-lg md:h-64 lg:h-80"
+          src={heroSectionPhoto1}
+          alt=""
+        />
+      </div>
+      <div className="mb-16 md:mb-0 md:max-w-xl sm:mx-auto md:text-center">
+        <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+        Education{" "}
+          <span className="inline-block text-emerald-400">
+          Consultant
+          </span>
+        </h2>
+        <p className="mb-5 text-base text-gray-700 md:text-lg">
+        Kami Sahabat Sejati adalah lembaga konsultan pendidikan luar negeri resmi yang siap mendukung kesuksesan masa depan anda mengikuti pendidikan maupun mengembangkan karir di luar negeri.
+        </p>
+        <div className="flex items-center md:justify-center">
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-emerald-400 hover:bg-emerald-700 focus:shadow-outline focus:outline-none"
+          >
+            Get started
+          </Link>
+          <Link
+            href="/"
+            aria-label=""
+            className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-emerald-700"
+          >
+            Contact us
+          </Link>
+        </div>
+      </div>
+    </div>
+
+
       <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         {/* Button */}
         <Link
@@ -32,7 +72,7 @@ const HeroSection = (props: Props) => {
         <div className="bg-white md:-my-24 sm:-my-20 xs:-my-20 md:mb-10 sm:mb-10">
           <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Education Consultant</h1>
           <p className="mb-4 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-            Kami Mitra MSA adalah lembaga konsultan pendidikan luar negeri resmi yang siap mendukung kesuksesan masa depan anda mengikuti pendidikan maupun mengembangkan karir di luar negeri.
+            Kami Sahabat Sejati adalah lembaga konsultan pendidikan luar negeri resmi yang siap mendukung kesuksesan masa depan anda mengikuti pendidikan maupun mengembangkan karir di luar negeri.
           </p>
         </div>
 
