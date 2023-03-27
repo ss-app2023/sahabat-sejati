@@ -15,114 +15,171 @@ const HeroSection = (props: Props) => {
   return (
     <section className="dark:bg-gray-900">
       <HeaderLogo />
+
+      {/* Header */}
       <div className="px-4 py-16 xs:py-4 md:py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-      <div className="relative mb-6 sm:mx-auto md:mb-10 md:max-w-md lg:max-w-lg">
-        <Image
-          className="object-cover w-full h-56 rounded-2xl xs:shadow-xl md:shadow-lg md:h-64 lg:h-80"
-          src={heroSectionPhoto1}
-          alt=""
-        />
-      </div>
-      <div className="mb-16 md:mb-0 md:max-w-xl sm:mx-auto md:text-center">
-        <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-        Education{" "}
-          <span className="inline-block text-emerald-400">
-          Consultant
-          </span>
-        </h2>
-        <p className="mb-5 text-base text-gray-700 md:text-lg">
-        Kami Sahabat Sejati adalah lembaga konsultan pendidikan luar negeri resmi yang siap mendukung kesuksesan masa depan anda mengikuti pendidikan maupun mengembangkan karir di luar negeri.
-        </p>
-        <div className="flex items-center md:justify-center">
-          <Link
-            href="/"
-            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-emerald-400 hover:bg-emerald-700 focus:shadow-outline focus:outline-none"
-          >
-            Get started
-          </Link>
-          <Link
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-emerald-700"
-          >
-            Contact us
-          </Link>
+        <div className="relative mb-6 sm:mx-auto md:mb-10 md:max-w-md lg:max-w-lg">
+          <Image
+            className="object-cover w-full h-56 rounded-2xl xs:shadow-xl md:shadow-lg md:h-64 lg:h-80"
+            src={heroSectionPhoto1}
+            alt=""
+          />
         </div>
-      </div>
-    </div>
-
-
-      <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        {/* Button */}
-        <Link
-          href="#OurPrograms"
-          className="inline-flex justify-between items-center shadow-slate-300 shadow-md py-1 px-1 pr-4 mb-10 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
-          role="alert"
-        >
-          <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">Join now!</span>
-          <span className="text-sm font-medium">Your future is here with us!</span>
-          <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
-          </svg>
-        </Link>
-
-        <Image className="lg:h-96 md:h-96 sm:h-80 xs:h-72 lg:w-96 md:w-96 sm:w-80 xs:w-72 rounded-full shadow-xl mx-auto" src={heroSectionPhoto} alt="Photo HeroSection" />
-
-        {/* Title HeroSection */}
-        <div className="bg-white md:-my-24 sm:-my-20 xs:-my-20 md:mb-10 sm:mb-10">
-          <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Education Consultant</h1>
-          <p className="mb-4 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-            Kami Sahabat Sejati adalah lembaga konsultan pendidikan luar negeri resmi yang siap mendukung kesuksesan masa depan anda mengikuti pendidikan maupun mengembangkan karir di luar negeri.
+        <div className="mb-16 md:mb-0 md:max-w-xl sm:mx-auto md:text-center">
+          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            Education{" "}
+            <span className="inline-block text-emerald-400">Consultant</span>
+          </h2>
+          <p className="mb-5 text-base text-gray-700 md:text-lg">
+            Kami Sahabat Sejati adalah lembaga konsultan pendidikan luar negeri
+            resmi yang siap mendukung kesuksesan masa depan anda mengikuti
+            pendidikan maupun mengembangkan karir di luar negeri.
           </p>
-        </div>
-
-        {/* Button */}
-        <div className="flex flex-col mb-8 lg:mb-16 lg:mt-8 md:mt-8 xs:mt-24 gap-4 space-y-4 sm:flex-row xs:flex-row sm:justify-center xs:justify-center sm:space-y-0 xs:space-y-0 sm:space-x-4 xs:space-x-4">
-          <Link
-            href="#OurPrograms"
-            className="inline-flex justify-center items-center shadow-slate-300 shadow-md py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-          >
-            Join us now!
-          </Link>
-          <Link
-            href="/ContactUs"
-            className="inline-flex justify-center items-center shadow-slate-300 shadow-md py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-          >
-            Contact Us
-          </Link>
-        </div>
-      </div>
-
-      {/* Our Program Section */}
-      {/* px-4 mt-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36 */}
-      <div id="OurPrograms" className="py-4 px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
-        <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Our Programs</h2>
-        <h3 className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-10 dark:text-gray-400">
-          Kami membantu anda belajar bahasa Jerman dan Jepang serta siap mendukung kesuksesan masa depan anda mengikuti pendidikan maupun mengembangkan karir di luar negeri.
-        </h3>
-
-        {/* Image Section */}
-        <div className="flex flex-wrap mx-auto mt-8 text-gray-500 sm:justify-between">
-          {/* Japan Banner image */}
-          <div className="mx-auto lg:mb-0 p-4 hover:text-gray-800 dark:hover:text-gray-400">
-            <Image className="h-80 w-80 rounded-2xl shadow-slate-400 shadow-md" src={bannerJepang1} alt="Banner Jepang" />
+          <div className="flex items-center md:justify-center">
             <Link
-              href="/jpnpages/HomeJpn"
-              className="inline-flex justify-center items-center shadow-slate-300 shadow-md py-3 px-5 mt-4 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 "
+              href="#OurPrograms"
+              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-emerald-400 hover:bg-emerald-700 focus:shadow-emerald-500 focus:outline-emerald-500"
             >
-              Learn more
+              Get started
+            </Link>
+            <Link
+              href="/ContactUs"
+              aria-label=""
+              className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-emerald-700"
+            >
+              Contact us
             </Link>
           </div>
+        </div>
+      </div>
 
-          {/* Jerman Banner image */}
-          <div className="mx-auto lg:mb-0 p-4 hover:text-gray-800 dark:hover:text-gray-400">
-            <Image className="h-80 w-80 rounded-2xl shadow-slate-400 shadow-md" src={bannerJerman1} alt="Banner Jerman" />
+      {/* Our Programs */}
+      <div
+        id="OurPrograms"
+        className="px-4 py-16 xs:py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+      >
+        <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
+          <div className="flex flex-col mb-16 xs:mb-4 sm:mb-0 sm:text-center">
             <Link
-              href="/gerpages/HomeGer"
-              className="inline-flex justify-center items-center shadow-slate-300 shadow-md py-3 px-5 mt-4 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              href="/"
+              className="mb-2 xs:mb-6 sm:mx-auto w-10 h-10 text-emerald-400"
             >
-              Learn more
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+                <svg
+                  className="w-10 h-10 text-emerald-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path d="M14 6H6v8h8V6z" />
+                  <path
+                    clipRule="evenodd"
+                    fillRule="evenodd"
+                    d="M9.25 3V1.75a.75.75 0 011.5 0V3h1.5V1.75a.75.75 0 011.5 0V3h.5A2.75 2.75 0 0117 5.75v.5h1.25a.75.75 0 010 1.5H17v1.5h1.25a.75.75 0 010 1.5H17v1.5h1.25a.75.75 0 010 1.5H17v.5A2.75 2.75 0 0114.25 17h-.5v1.25a.75.75 0 01-1.5 0V17h-1.5v1.25a.75.75 0 01-1.5 0V17h-1.5v1.25a.75.75 0 01-1.5 0V17h-.5A2.75 2.75 0 013 14.25v-.5H1.75a.75.75 0 010-1.5H3v-1.5H1.75a.75.75 0 010-1.5H3v-1.5H1.75a.75.75 0 010-1.5H3v-.5A2.75 2.75 0 015.75 3h.5V1.75a.75.75 0 011.5 0V3h1.5zM4.5 5.75c0-.69.56-1.25 1.25-1.25h8.5c.69 0 1.25.56 1.25 1.25v8.5c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25v-8.5z"
+                  />
+                </svg>
+              </div>
             </Link>
+            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                <span className="relative inline-block">
+                  <svg
+                    viewBox="0 0 52 24"
+                    fill="currentColor"
+                    className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                  >
+                    <defs>
+                      <pattern
+                        id="e77df901-b9d7-4b9b-822e-16b2d410795b"
+                        x="0"
+                        y="0"
+                        width=".135"
+                        height=".30"
+                      >
+                        <circle cx="1" cy="1" r=".7" />
+                      </pattern>
+                    </defs>
+                    <rect
+                      fill="url(#e77df901-b9d7-4b9b-822e-16b2d410795b)"
+                      width="52"
+                      height="24"
+                    />
+                  </svg>
+                  <span className="relative">Our</span>
+                </span>{" "}
+                Programs
+              </h2>
+              <p className="text-base text-gray-700 md:text-lg">
+                Kami membantu anda belajar bahasa Jerman dan Jepang serta siap
+                mendukung kesuksesan masa depan anda mengikuti pendidikan maupun
+                mengembangkan karir di luar negeri.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Media Our Programs */}
+      <div className="px-4 py-16 xs:py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="grid max-w-screen-lg gap-8 xs:gap-16 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-2">
+          {/* Image 1 */}
+          <div className="transition duration-300 transform bg-white rounded shadow-sm xs:shadow-lg hover:-translate-y-1 hover:shadow md:text-center">
+            <div className="relative">
+              <Image
+                className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
+                src={bannerJerman1}
+                alt="Banner Jerman"
+              />
+              <div className="absolute inset-0 bg-gray-800 bg-opacity-25" />
+            </div>
+            <div className="px-6 py-8 border border-t-0 rounded-b sm:px-8">
+              <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
+                Program Ausbildung
+              </h5>
+              <p className="mb-5 text-gray-700">
+                Ausbildung adalah Program Pendidikan dan Pelatihan Profesi
+                selama 3 tahun di Jerman. Pembelajaran di sekolah kejuruan
+                sebanyak 2 hari untuk teori dan kerja praktik selama 3 hari.
+                Beberapa perusahaan juga ada yang menggunakan sistem blok, yaitu
+                1 bulan sekolah dan 1 bulan kerja praktik.
+              </p>
+              <Link
+                href="/gerpages/HomeGer"
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-emerald-400 hover:bg-emerald-700 focus:shadow-emerald-500 focus:outline-emerald-500"
+              >
+                Read more
+              </Link>
+            </div>
+          </div>
+
+          {/* Image 2 */}
+          <div className="transition duration-300 transform bg-white rounded shadow-sm xs:shadow-lg hover:-translate-y-1 hover:shadow md:text-center">
+            <div className="relative">
+              <Image
+                className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
+                src={bannerJepang1}
+                alt="Banner Jepang"
+              />
+              <div className="absolute inset-0 bg-gray-800 bg-opacity-25" />
+            </div>
+            <div className="px-6 py-8 border border-t-0 rounded-b sm:px-8">
+              <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
+                Program Specified Skill Worker (SSW)
+              </h5>
+              <p className="mb-5 text-gray-700">
+                ke Negara Jepang menjadi salah satu solusi dari banyaknya
+                masyarakat yang mengeluhkan tentang kesulitan memperoleh
+                pekerjaan dan pendidikan/keahlian yang tidak sesuai dengan
+                kebutuhan dunia kerja.
+              </p>
+              <Link
+                href="/jpnpages/HomeJpn"
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-emerald-400 hover:bg-emerald-700 focus:shadow-emerald-500 focus:outline-emerald-500"
+              >
+                Read more
+              </Link>
+            </div>
           </div>
         </div>
       </div>

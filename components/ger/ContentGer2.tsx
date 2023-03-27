@@ -1,117 +1,488 @@
 // Import for system
 import React from "react";
-// -----------------------
+import Link from "next/link";
+import Image from "next/image";
+// --------------------------
+import RegistPhoto1 from "../../public/registPhoto1.jpg";
 
 type Props = {};
 
 const ContentGer2 = (props: Props) => {
   return (
     <div>
-      <div className="dark:bg-gray-900">
-        <div className="px-10 py-8 mx-auto max-w-screen-xl lg:py-10 lg:px-6">
-          <div className="max-w-screen-xl text-gray-500 sm:text-lg dark:text-gray-400">
-            <h3 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-4xl xs:text-3xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
-              Persyaratan Mendaftar <span className="font-extrabold text-primary-600">Ausbildung</span> di <span className="font-extrabold text-primary-700"> Jerman</span>?
-            </h3>
-            <ul className="max-w-screen-xl space-y-1 mb-4 text-gray-500 list-disc list-inside dark:text-gray-400">
-              <li>Memiliki kemampuan bahasa Jerman Level B1.</li>
-              <li>Pendidikan terakhir MINIMAL SMA sederajat.</li>
-              <li>Usia produktif, yaitu mulai dari 18 tahun sd 35 tahun.</li>
-              <li>Memiliki kemampuan keuangan karena proses mulai dari awal sampai berangkat ke Jerman dibiayai sendiri (tidak ada sistem potong gaji)</li>
-            </ul>
+      {/* Section 1 */}
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <div>
+            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+              Requirements
+            </p>
           </div>
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            <span className="relative inline-block">
+              <svg
+                viewBox="0 0 52 24"
+                fill="currentColor"
+                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+              >
+                <defs>
+                  <pattern
+                    id="34f481be-159a-4846-821d-9ca19fb6bcc5"
+                    x="0"
+                    y="0"
+                    width=".135"
+                    height=".30"
+                  >
+                    <circle cx="1" cy="1" r=".7" />
+                  </pattern>
+                </defs>
+                <rect
+                  fill="url(#34f481be-159a-4846-821d-9ca19fb6bcc5)"
+                  width="52"
+                  height="24"
+                />
+              </svg>
+              <span className="relative leading-normal">
+                Persyaratan Mendaftar
+              </span>
+            </span>{" "}
+            Ausbildung
+          </h2>
+          <p className="text-base text-gray-700 md:text-lg">
+            Berikut adalah persyaratan mendaftar untuk Program Ausbildung
+          </p>
+        </div>
+        <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
+          <div className="duration-300 transform bg-white border-l-4 border-indigo-400 hover:-translate-y-2">
+            <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+              <h6 className="mb-2 font-semibold leading-5">Bahasa</h6>
+              <p className="text-sm text-gray-900">
+                Memiliki kemampuan bahasa Jerman Level B1.
+              </p>
+            </div>
+          </div>
+          <div className="duration-300 transform bg-white border-l-4 border-indigo-400 hover:-translate-y-2">
+            <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+              <h6 className="mb-2 font-semibold leading-5">Pendidikan</h6>
+              <p className="text-sm text-gray-900">
+                Pendidikan terakhir MINIMAL SMA sederajat.
+              </p>
+            </div>
+          </div>
+          <div className="duration-300 transform bg-white border-l-4 border-indigo-400 hover:-translate-y-2">
+            <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+              <h6 className="mb-2 font-semibold leading-5">Usia</h6>
+              <p className="text-sm text-gray-900">
+                Usia produktif, yaitu mulai dari 18 tahun sd 35 tahun.
+              </p>
+            </div>
+          </div>
+          <div className="duration-300 transform bg-white border-l-4 border-indigo-400 hover:-translate-y-2">
+            <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+              <h6 className="mb-2 font-semibold leading-5">Finansial</h6>
+              <p className="text-sm text-gray-900">
+                Memiliki kemampuan keuangan karena proses mulai dari awal sampai
+                berangkat ke Jerman dibiayai sendiri (tidak ada sistem potong
+                gaji)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="text-center">
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-indigo-400 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
+          >
+            Learn more
+          </Link>
         </div>
       </div>
 
-      <div className="px-10 py-8 mx-auto max-w-screen-xl lg:py-10 lg:px-6">
-        <h3 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-4xl xs:text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
-          Batasan <span className="text-teal-600 dark:text-primary-500">Usia</span>
-        </h3>
-        <p className="text-lg font-normal mb-6 text-gray-500 lg:text-xl dark:text-gray-400">Batasan usia berlaku untuk orang Indonesia. Hal ini berkaitan dengan pendidikan dan pengalaman yang dimiliki.</p>
-        <ul className="max-w-screen-xl space-y-1 mb-6 text-gray-500 list-disc list-inside dark:text-gray-400">
-          <li>Lulusan SMA tanpa pengalaman kerja, tidak memiliki kemampuan yang diunggulkan, disarankan mendaftar Ausbildung sebelum usia 30 tahun.</li>
-          <li>Lulusan SMK Perhotelan, Tata Boga, disarankan mendaftar Ausbildung sebelum usia 35 tahun.</li>
-          <li>Lulusan Diploma, Sarjana dari semua jurusan, disarankan mendaftar Ausbildung sebelum usia 35 tahun.</li>
-          <li>Lulusan Diploma/ Sarjana Perhotelan, Tata Boga, Keperawatan dapat mendaftar Ausbildung meskipun usia lebih 35 tahun.</li>
-          <li>Bagi kamu lulusan SMA, SMK, Diploma, Sarjana dari semua jurusan yang memiliki pengalaman/ kompetensi keahlian di bidang Perhotelan, Tata Boga, Keperawatan dapat mendaftar Ausbildung sampai usia 35 tahun.</li>
-        </ul>
-        <a href="#ContentGer2" className="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
-          Scroll down
-          <svg className="w-4 h-4 items-center" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path
-              clipRule="evenodd"
-              fillRule="evenodd"
-              d="M14.77 4.21a.75.75 0 01.02 1.06l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 011.08-1.04L10 8.168l3.71-3.938a.75.75 0 011.06-.02zm0 6a.75.75 0 01.02 1.06l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 111.08-1.04L10 14.168l3.71-3.938a.75.75 0 011.06-.02z"
-            />
-          </svg>
-        </a>
-      </div>
-
-      <div id="ContentGer2" className="max-w-screen-xl mx-auto px-10 py-8 lg:py-10 lg:px-6">
-        <h2 className="md:mb-8 sm:mb-6 xs:mb-6 md:text-6xl sm:text-4xl xs:text-4xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
-          Cara dan Tahapan <span className="font-extrabold text-primary-600">Mendaftar</span>
-        </h2>
-        <ol className="relative border-l dark:border-gray-700">
-          <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-teal-100 rounded-full -left-3 ring-8 ring-teal-50 dark:ring-gray-900 dark:bg-teal-900">
-              <svg className="w-4 h-4 text-teal-800 dark:text-teal-300" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path
+      {/* Section 2 */}
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <div>
+            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+              Requirements
+            </p>
+          </div>
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            <span className="relative inline-block">
+              <svg
+                viewBox="0 0 52 24"
+                fill="currentColor"
+                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+              >
+                <defs>
+                  <pattern
+                    id="d9d7687a-355f-4502-8ec4-7945db034688"
+                    x="0"
+                    y="0"
+                    width=".135"
+                    height=".30"
+                  >
+                    <circle cx="1" cy="1" r=".7" />
+                  </pattern>
+                </defs>
+                <rect
+                  fill="url(#d9d7687a-355f-4502-8ec4-7945db034688)"
+                  width="52"
+                  height="24"
+                />
+              </svg>
+              <span className="relative">Batasan</span>
+            </span>{" "}
+            Usia
+          </h2>
+          <p className="text-base text-gray-700 md:text-lg">
+            Batasan usia berlaku untuk orang Indonesia. Hal ini berkaitan dengan
+            pendidikan dan pengalaman yang dimiliki.
+          </p>
+        </div>
+        <div className="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+              <svg
+                className="w-10 h-10 text-deep-purple-accent-400"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
                 />
               </svg>
-            </span>
-            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Belajar bahasa Jerman di Mitra Sarana Anugerah Surabaya.</h3>
-          </li>
-          <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-teal-100 rounded-full -left-3 ring-8 ring-teal-50 dark:ring-gray-900 dark:bg-teal-900">
-              <svg className="w-4 h-4 text-teal-800 dark:text-teal-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M7 3.5A1.5 1.5 0 018.5 2h3.879a1.5 1.5 0 011.06.44l3.122 3.12A1.5 1.5 0 0117 6.622V12.5a1.5 1.5 0 01-1.5 1.5h-1v-3.379a3 3 0 00-.879-2.121L10.5 5.379A3 3 0 008.379 4.5H7v-1z" />
-                <path d="M4.5 6A1.5 1.5 0 003 7.5v9A1.5 1.5 0 004.5 18h7a1.5 1.5 0 001.5-1.5v-5.879a1.5 1.5 0 00-.44-1.06L9.44 6.439A1.5 1.5 0 008.378 6H4.5z" />
-              </svg>
-            </span>
-            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Mempersiapkan dan mengurus dokumen persyaratan mendaftar, kamu akan dibantu oleh Tim Profesional kami.</h3>
-          </li>
-          <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-teal-100 rounded-full -left-3 ring-8 ring-teal-50 dark:ring-gray-900 dark:bg-teal-900">
-              <svg className="w-4 h-4 text-teal-800 dark:text-teal-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M3.505 2.365A41.369 41.369 0 019 2c1.863 0 3.697.124 5.495.365 1.247.167 2.18 1.108 2.435 2.268a4.45 4.45 0 00-.577-.069 43.141 43.141 0 00-4.706 0C9.229 4.696 7.5 6.727 7.5 8.998v2.24c0 1.413.67 2.735 1.76 3.562l-2.98 2.98A.75.75 0 015 17.25v-3.443c-.501-.048-1-.106-1.495-.172C2.033 13.438 1 12.162 1 10.72V5.28c0-1.441 1.033-2.717 2.505-2.914z" />
-                <path d="M14 6c-.762 0-1.52.02-2.271.062C10.157 6.148 9 7.472 9 8.998v2.24c0 1.519 1.147 2.839 2.71 2.935.214.013.428.024.642.034.2.009.385.09.518.224l2.35 2.35a.75.75 0 001.28-.531v-2.07c1.453-.195 2.5-1.463 2.5-2.915V8.998c0-1.526-1.157-2.85-2.729-2.936A41.645 41.645 0 0014 6z" />
-              </svg>
-            </span>
-            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Interview/ wawancara dengan pihak perusahaan di Jerman sampai mendapatkan Kontrak, kamu akan dibantu oleh Tim Profesional kami.</h3>
-          </li>
-          <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-teal-100 rounded-full -left-3 ring-8 ring-teal-50 dark:ring-gray-900 dark:bg-teal-900">
-              <svg className="w-4 h-4 text-teal-800 dark:text-teal-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path
-                  clipRule="evenodd"
-                  fillRule="evenodd"
-                  d="M3 3.5A1.5 1.5 0 014.5 2h6.879a1.5 1.5 0 011.06.44l4.122 4.12A1.5 1.5 0 0117 7.622V16.5a1.5 1.5 0 01-1.5 1.5h-11A1.5 1.5 0 013 16.5v-13zm10.857 5.691a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 00-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">
+              Untuk Lulusan SMA sederajat
+            </h6>
+            <p className="text-sm text-gray-900">
+              Lulusan SMA tanpa pengalaman kerja, tidak memiliki kemampuan yang
+              diunggulkan, disarankan mendaftar Ausbildung sebelum usia 30
+              tahun.
+            </p>
+          </div>
+          <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+              <svg
+                className="w-10 h-10 text-deep-purple-accent-400"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
                 />
               </svg>
-            </span>
-            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Mengurus Visa dan Asuransi, kamu akan dibantu oleh Tim Profesional kami.</h3>
-          </li>
-          <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-teal-100 rounded-full -left-3 ring-8 ring-teal-50 dark:ring-gray-900 dark:bg-teal-900">
-              <svg className="w-4 h-4 text-teal-800 dark:text-teal-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path
-                  clipRule="evenodd"
-                  fillRule="evenodd"
-                  d="M4.606 12.97a.75.75 0 01-.134 1.051 2.494 2.494 0 00-.93 2.437 2.494 2.494 0 002.437-.93.75.75 0 111.186.918 3.995 3.995 0 01-4.482 1.332.75.75 0 01-.461-.461 3.994 3.994 0 011.332-4.482.75.75 0 011.052.134z"
-                />
-                <path
-                  clipRule="evenodd"
-                  fillRule="evenodd"
-                  d="M5.752 12A13.07 13.07 0 008 14.248v4.002c0 .414.336.75.75.75a5 5 0 004.797-6.414 12.984 12.984 0 005.45-10.848.75.75 0 00-.735-.735 12.984 12.984 0 00-10.849 5.45A5 5 0 001 11.25c.001.414.337.75.751.75h4.002zM13 9a2 2 0 100-4 2 2 0 000 4z"
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">
+              Untuk Lulusan SMK Sederajat Perhotelan & Tata Boga
+            </h6>
+            <p className="text-sm text-gray-900">
+              Lulusan SMK Perhotelan, Tata Boga, disarankan mendaftar Ausbildung
+              sebelum usia 35 tahun.
+            </p>
+          </div>
+          <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+              <svg
+                className="w-10 h-10 text-deep-purple-accent-400"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
                 />
               </svg>
-            </span>
-            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Berangkat ke Jerman.</h3>
-          </li>
-        </ol>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">
+              Untuk Lulusan Diploma
+            </h6>
+            <p className="text-sm text-gray-900">
+              Lulusan Diploma, Sarjana dari semua jurusan, disarankan mendaftar
+              Ausbildung sebelum usia 35 tahun.
+            </p>
+          </div>
+          <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+              <svg
+                className="w-10 h-10 text-deep-purple-accent-400"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">
+              Untuk Lulusan Diploma Perhotelan, Tata Boga & Keperawatan
+            </h6>
+            <p className="text-sm text-gray-900">
+              Lulusan Diploma/ Sarjana Perhotelan, Tata Boga, Keperawatan dapat
+              mendaftar Ausbildung meskipun usia lebih 35 tahun.
+            </p>
+          </div>
+          <h6 className="mb-0 font-semibold leading-5">Catatan :</h6>
+          <p className="text-sm text-gray-900">
+            Bagi kamu lulusan SMA, SMK, Diploma, Sarjana dari semua jurusan yang
+            memiliki pengalaman/ kompetensi keahlian di bidang Perhotelan, Tata
+            Boga, Keperawatan dapat mendaftar Ausbildung sampai usia 35 tahun.
+          </p>
+        </div>
+        <div className="text-center">
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+          >
+            Learn more
+          </Link>
+        </div>
+      </div>
+
+      {/* Section 2 */}
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <div>
+            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+              Registration
+            </p>
+          </div>
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            <span className="relative inline-block">
+              <svg
+                viewBox="0 0 52 24"
+                fill="currentColor"
+                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+              >
+                <defs>
+                  <pattern
+                    id="d0d83814-78b6-480f-9a5f-7f637616b267"
+                    x="0"
+                    y="0"
+                    width=".135"
+                    height=".30"
+                  >
+                    <circle cx="1" cy="1" r=".7" />
+                  </pattern>
+                </defs>
+                <rect
+                  fill="url(#d0d83814-78b6-480f-9a5f-7f637616b267)"
+                  width="52"
+                  height="24"
+                />
+              </svg>
+              <span className="relative">Cara</span>
+            </span>{" "}
+            Tahapan Mendaftar
+          </h2>
+          <p className="text-base text-gray-700 md:text-lg">
+            Berikut tahapan mendaftar untuk program Ausbildung
+          </p>
+        </div>
+        <div className="grid gap-6 row-gap-10 lg:grid-cols-2">
+          <div className="lg:py-6 lg:pr-16">
+            <div className="flex">
+              <div className="flex flex-col items-center mr-4">
+                <div>
+                  <div className="flex items-center justify-center w-10 h-10 border rounded-full">
+                    <svg
+                      className="w-4 text-gray-600"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <line
+                        fill="none"
+                        strokeMiterlimit="10"
+                        x1="12"
+                        y1="2"
+                        x2="12"
+                        y2="22"
+                      />
+                      <polyline
+                        fill="none"
+                        strokeMiterlimit="10"
+                        points="19,15 12,22 5,15"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="w-px h-full bg-gray-300" />
+              </div>
+              <div className="pt-1 pb-8">
+                <p className="mb-2 text-lg font-bold">Pembelajaran</p>
+                <p className="text-gray-700">
+                  Belajar bahasa Jerman di Mitra Sarana Anugerah Surabaya.
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="flex flex-col items-center mr-4">
+                <div>
+                  <div className="flex items-center justify-center w-10 h-10 border rounded-full">
+                    <svg
+                      className="w-4 text-gray-600"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <line
+                        fill="none"
+                        strokeMiterlimit="10"
+                        x1="12"
+                        y1="2"
+                        x2="12"
+                        y2="22"
+                      />
+                      <polyline
+                        fill="none"
+                        strokeMiterlimit="10"
+                        points="19,15 12,22 5,15"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="w-px h-full bg-gray-300" />
+              </div>
+              <div className="pt-1 pb-8">
+                <p className="mb-2 text-lg font-bold">Pendaftaran</p>
+                <p className="text-gray-700">
+                  Mempersiapkan dan mengurus dokumen persyaratan mendaftar, kamu
+                  akan dibantu oleh Tim Profesional kami.
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="flex flex-col items-center mr-4">
+                <div>
+                  <div className="flex items-center justify-center w-10 h-10 border rounded-full">
+                    <svg
+                      className="w-4 text-gray-600"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <line
+                        fill="none"
+                        strokeMiterlimit="10"
+                        x1="12"
+                        y1="2"
+                        x2="12"
+                        y2="22"
+                      />
+                      <polyline
+                        fill="none"
+                        strokeMiterlimit="10"
+                        points="19,15 12,22 5,15"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="w-px h-full bg-gray-300" />
+              </div>
+              <div className="pt-1 pb-8">
+                <p className="mb-2 text-lg font-bold">Wawancara Kerja</p>
+                <p className="text-gray-700">
+                  Interview/ wawancara dengan pihak perusahaan di Jerman sampai
+                  mendapatkan Kontrak, kamu akan dibantu oleh Tim Profesional
+                  kami.
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="flex flex-col items-center mr-4">
+                <div>
+                  <div className="flex items-center justify-center w-10 h-10 border rounded-full">
+                    <svg
+                      className="w-4 text-gray-600"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      viewBox="0 0 24 24"
+                    >
+                      <line
+                        fill="none"
+                        strokeMiterlimit="10"
+                        x1="12"
+                        y1="2"
+                        x2="12"
+                        y2="22"
+                      />
+                      <polyline
+                        fill="none"
+                        strokeMiterlimit="10"
+                        points="19,15 12,22 5,15"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="w-px h-full bg-gray-300" />
+              </div>
+              <div className="pt-1 pb-8">
+                <p className="mb-2 text-lg font-bold">Administrasi Visa</p>
+                <p className="text-gray-700">
+                  Mengurus Visa dan Asuransi, kamu akan dibantu oleh Tim
+                  Profesional kami.
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="flex flex-col items-center mr-4">
+                <div>
+                  <div className="flex items-center justify-center w-10 h-10 border rounded-full">
+                    <svg
+                      className="w-6 text-gray-600"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline
+                        fill="none"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeMiterlimit="10"
+                        points="6,12 10,16 18,8"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div className="pt-1">
+                <p className="mb-2 text-lg font-bold">Berangkat Ke Jerman</p>
+                <p className="text-gray-700" />
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <Image
+              className="inset-0 object-cover object-center w-full rounded shadow-lg h-96 lg:absolute lg:h-full"
+              src={RegistPhoto1}
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
