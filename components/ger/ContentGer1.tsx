@@ -64,7 +64,7 @@ const ContentGer1 = (props: Props) => {
               </svg>
             </div>
             <div className="max-w-xl mb-6">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 xs:text-4xl xs:leading-tight">
                 Apa itu <br className="hidden md:block" />
                 Program{" "}
                 <span className="inline-block text-indigo-400">
@@ -150,7 +150,7 @@ const ContentGer1 = (props: Props) => {
                 </svg>
               </div>
             </Link>
-            <h5 className="mb-4 text-4xl font-extrabold leading-none xs:leading-tight">
+            <h5 className="mb-4 text-4xl font-extrabold leading-none xs:text-4xl xs:leading-tight">
               Program <br className="xs:block " />
               Ausbildung{" "}
               <span className="inline-block text-indigo-400">Jerman</span>
@@ -225,7 +225,7 @@ const ContentGer1 = (props: Props) => {
                 Important
               </p>
             </div>
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto xs:text-4xl xs:leading-tight">
               <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"
@@ -302,7 +302,7 @@ const ContentGer1 = (props: Props) => {
               Videos
             </p>
           </div>
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto xs:text-4xl xs:leading-tight">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
@@ -378,7 +378,7 @@ const ContentGer1 = (props: Props) => {
           <Link
             href="/"
             aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            className="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-400 hover:text-deep-purple-800"
           >
             Learn more
           </Link>
@@ -388,12 +388,12 @@ const ContentGer1 = (props: Props) => {
       {/* Fifth Section */}
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
-          <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
+          <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group xs:text-4xl xs:leading-tight">
             <span className="inline-block mb-1 sm:mb-4">
-              Gallery <br className="hidden md:block" />
-              Mitra Sahabat Sejati
+              Our <br className="hidden md:block" />
+              Gallery
             </span>
-            <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
+            <div className="h-1 ml-auto duration-300 origin-left transform bg-indigo-400 scale-x-30 group-hover:scale-x-100" />
           </h2>
           <p className="text-gray-700 lg:text-sm lg:max-w-md">
             Berikut foto galeri kami dari Sahabat Sejati
@@ -476,9 +476,9 @@ const ContentGer1 = (props: Props) => {
           <Link
             href="/"
             aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            className="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-400 hover:text-deep-purple-800"
           >
-            View gallery
+            Learn More
             <svg
               className="inline-block w-3 ml-2"
               fill="currentColor"

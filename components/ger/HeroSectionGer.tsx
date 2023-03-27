@@ -15,7 +15,11 @@ const HeroSectionGer = (props: Props) => {
         <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
           <div className="relative z-10 lg:py-16">
             <div className="relative h-64 sm:h-80 lg:h-full">
-              <img alt="Germany" src="https://jerman.mitragroup.id/wp-content/uploads/2022/07/IMG_1371-1024x768.jpeg" className="absolute inset-0 h-full w-full object-cover xs:shadow-none md:shadow-2xl" />
+              <img
+                alt="Germany"
+                src="https://jerman.mitragroup.id/wp-content/uploads/2022/07/IMG_1371-1024x768.jpeg"
+                className="absolute inset-0 h-full w-full object-cover xs:shadow-none md:shadow-2xl"
+              />
             </div>
           </div>
 
@@ -23,13 +27,22 @@ const HeroSectionGer = (props: Props) => {
             <span className="xs:hidden xs:shad lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-gray-100"></span>
 
             <div className="p-8 sm:p-16 lg:p-24">
-              <h2 className="text-2xl font-bold sm:text-3xl">
-                Program <span className="font-extrabold text-indigo-600">Ausbildung</span>
+              <h2 className="text-2xl font-bold sm:text-3xl xs:text-4xl xs:leading-tight">
+                Program{" "}
+                <span className="font-extrabold text-indigo-600">
+                  Ausbildung
+                </span>
               </h2>
 
               <p className="mt-4 text-gray-600">
-                Sahabat Sejati - MSA adalah lembaga konsultan pendidikan luar negeri resmi yang berlokasi di Surabaya, JawaTimur. Kami menyediakan berbagai pilihan pendidikan bahasa yang siap mendukung kesuksesan masa depan anda mengikuti
-                pendidikan maupun mengembangkan karir di luar negeri, Khususnya pendidikan vokasi dan bekerja di Jerman (Eropa) . Program ini (Ausbildung) saat ini tersedia dibidang perhotelan, restoran, chef dan keperawatan.
+                Sahabat Sejati - MSA adalah lembaga konsultan pendidikan luar
+                negeri resmi yang berlokasi di Surabaya, JawaTimur. Kami
+                menyediakan berbagai pilihan pendidikan bahasa yang siap
+                mendukung kesuksesan masa depan anda mengikuti pendidikan maupun
+                mengembangkan karir di luar negeri, Khususnya pendidikan vokasi
+                dan bekerja di Jerman (Eropa) . Program ini (Ausbildung) saat
+                ini tersedia dibidang perhotelan, restoran, chef dan
+                keperawatan.
               </p>
 
               <a

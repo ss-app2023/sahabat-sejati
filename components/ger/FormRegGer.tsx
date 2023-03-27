@@ -10,7 +10,7 @@ const FormRegGer = (props: Props) => {
       id="Form"
       className="max-w-screen-xl mx-auto px-10 py-8 lg:py-10 lg:px-6"
     >
-      <h2 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-4xl xs:text-4xl tracking-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
+      <h2 className="md:mb-8 sm:mb-4 xs:mb-4 md:text-6xl sm:text-4xl xs:text-4xl tracking-tight xs:leading-tight sm:leading-tight font-bold text-gray-900 dark:text-white">
         Form Registration{" "}
         <span className="font-extrabold text-indigo-600">Ausbildung</span>
       </h2>

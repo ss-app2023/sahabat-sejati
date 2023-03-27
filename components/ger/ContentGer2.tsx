@@ -18,7 +18,7 @@ const ContentGer2 = (props: Props) => {
               Requirements
             </p>
           </div>
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto xs:leading-tight">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
@@ -42,9 +42,7 @@ const ContentGer2 = (props: Props) => {
                   height="24"
                 />
               </svg>
-              <span className="relative leading-normal">
-                Persyaratan Mendaftar
-              </span>
+              <span className="relative">Persyaratan Mendaftar</span>
             </span>{" "}
             Ausbildung
           </h2>
@@ -106,7 +104,7 @@ const ContentGer2 = (props: Props) => {
               Requirements
             </p>
           </div>
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto xs:text-4xl xs:leading-tight">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
@@ -143,7 +141,7 @@ const ContentGer2 = (props: Props) => {
           <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
               <svg
-                className="w-10 h-10 text-deep-purple-accent-400"
+                className="w-10 h-10 text-indigo-400"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
               >
@@ -168,7 +166,7 @@ const ContentGer2 = (props: Props) => {
           <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
               <svg
-                className="w-10 h-10 text-deep-purple-accent-400"
+                className="w-10 h-10 text-indigo-400"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
               >
@@ -192,7 +190,7 @@ const ContentGer2 = (props: Props) => {
           <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
               <svg
-                className="w-10 h-10 text-deep-purple-accent-400"
+                className="w-10 h-10 text-indigo-400"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
               >
@@ -216,7 +214,7 @@ const ContentGer2 = (props: Props) => {
           <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
               <svg
-                className="w-10 h-10 text-deep-purple-accent-400"
+                className="w-10 h-10 text-indigo-400"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
               >
@@ -247,7 +245,7 @@ const ContentGer2 = (props: Props) => {
         <div className="text-center">
           <Link
             href="/"
-            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-indigo-400 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
           >
             Learn more
           </Link>
@@ -262,7 +260,7 @@ const ContentGer2 = (props: Props) => {
               Registration
             </p>
           </div>
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto xs:text-4xl xs:leading-tight">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
