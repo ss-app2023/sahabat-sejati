@@ -15,7 +15,11 @@ const HeroSectionJpn = (props: Props) => {
         <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
           <div className="relative z-10 lg:py-16">
             <div className="relative h-64 sm:h-80 lg:h-full">
-              <img alt="Germany" src="https://jepang.mitragroup.id/wp-content/uploads/2022/07/20190213_155455_063-1024x768.jpg" className="absolute inset-0 h-full w-full object-cover xs:shadow-none md:shadow-2xl" />
+              <img
+                alt="Japan"
+                src="https://jepang.mitragroup.id/wp-content/uploads/2022/07/20190213_155455_063-1024x768.jpg"
+                className="absolute inset-0 h-full w-full object-cover xs:shadow-none md:shadow-2xl"
+              />
             </div>
           </div>
 
@@ -24,12 +28,17 @@ const HeroSectionJpn = (props: Props) => {
 
             <div className="p-8 sm:p-16 lg:p-24">
               <h2 className="text-2xl font-bold sm:text-3xl">
-                Program <span className="font-extrabold text-amber-600">Specified Skilled Worker (SSW)</span>
+                Program{" "}
+                <span className="font-extrabold text-amber-600">
+                  Specified Skilled Worker (SSW)
+                </span>
               </h2>
 
               <p className="mt-4 text-gray-600">
-                Program SSW merupakan status visa/ijin tinggal bagi warga negara asing di Jepang yang mulai berlaku sejak 1 April 2019. Pemegang visa SSW dapat bekerja di perusahaan Jepang dengan hak dan kewajiban yang sama dengan pekerja
-                Jepang.
+                Program SSW merupakan status visa/ijin tinggal bagi warga negara
+                asing di Jepang yang mulai berlaku sejak 1 April 2019. Pemegang
+                visa SSW dapat bekerja di perusahaan Jepang dengan hak dan
+                kewajiban yang sama dengan pekerja Jepang.
               </p>
 
               <a
