@@ -4,13 +4,12 @@ import { Inter } from "next/font/google";
 
 // ------------------------------------------------
 // Import for pages
+import HeaderLogo from "@/components/HeaderLogo";
 import HeroSectionGer from "@/components/ger/HeroSectionGer";
-import Footer from "@/components/Footer";
 import ContentGer1 from "@/components/ger/ContentGer1";
 import ContentGer2 from "@/components/ger/ContentGer2";
-import FormRegGer from "@/components/ger/FormRegGer";
-import HeaderLogo from "@/components/HeaderLogo";
 import BtnBckHome from "@/components/BtnBckHome";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +27,6 @@ export default function Home() {
         <HeroSectionGer />
         <ContentGer1 />
         <ContentGer2 />
-        <FormRegGer />
         <BtnBckHome />
         <Footer />
       </main>

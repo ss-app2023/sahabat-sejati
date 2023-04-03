@@ -8,7 +8,6 @@ import HeaderLogo from "@/components/HeaderLogo";
 import HeroSectionJpn from "@/components/jpn/HeroSectionJpn";
 import ContentJpn1 from "@/components/jpn/ContentJpn1";
 import ContentJpn2 from "@/components/jpn/ContentJpn2";
-import FormRegJpn from "@/components/jpn/FormRegJpn";
 import Footer from "@/components/Footer";
 import BtnBckHome from "@/components/BtnBckHome";
 
@@ -28,7 +27,6 @@ const HomeJpn = (props: Props) => {
         <HeroSectionJpn />
         <ContentJpn1 />
         <ContentJpn2 />
-        <FormRegJpn />
         <BtnBckHome />
         <Footer />
       </main>

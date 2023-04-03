@@ -498,7 +498,8 @@ const ContentGer2 = (props: Props) => {
         </div>
         <div className="text-center my-6">
           <Link
-            href="#FormRegistGer"
+            href="https://docs.google.com/forms/d/1jdpJbp3cnBFWSw4q7DEN17PQhP8xQBpCVvJdvrP05BE/edit"
+            target="_blank"
             className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-indigo-400 hover:bg-indigo-700 focus:shadow-outline focus:outline-none"
           >
             Register Now!

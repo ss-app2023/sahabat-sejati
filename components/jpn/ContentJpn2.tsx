@@ -596,7 +596,8 @@ const ContentJpn2 = (props: Props) => {
         </div>
         <div className="text-center my-6">
           <Link
-            href="#FormRegistJpn"
+            href="https://docs.google.com/forms/d/10hMvsKNcL32mW0SN0CKm4c7O6NFW9xSJ0i6HkiKtzOQ/edit"
+            target="_blank"
             className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-amber-400 hover:bg-amber-700 focus:shadow-outline focus:outline-none"
           >
             Register Now!
